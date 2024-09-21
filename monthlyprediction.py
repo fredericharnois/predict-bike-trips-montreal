@@ -67,6 +67,7 @@ plt.title('Monthly Bike Trips')
 plt.xlabel('Date')
 plt.ylabel('Number of Trips')
 plt.legend()
+plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(millions_formatter))
 plt.savefig('plots/monthly_bike_trips.png')
 plt.close()
 
